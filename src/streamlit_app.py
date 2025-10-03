@@ -3,8 +3,10 @@ import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
-MODEL_PATH = "model_pipeline.pkl"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model_pipeline.pkl")
 pipe = joblib.load(MODEL_PATH)
 
 disposition_map = {0: "CANDIDATE", 1: "CONFIRMED", 2: "FALSE POSITIVE"}
