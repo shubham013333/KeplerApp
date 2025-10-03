@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from data_loader import load_kepler
 
 
-def train_and_save(csv_path: str, out_path: str = "model_pipeline.pkl"):
+def train_and_save(csv_path: str, out_path: str = "\model_pipeline.pkl"):
     df = load_kepler(csv_path)
     features = [
         "koi_period", "koi_time0bk", "koi_impact", "koi_duration",
