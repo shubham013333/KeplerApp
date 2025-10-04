@@ -44,7 +44,7 @@ An interactive web app built with **Streamlit** and **Machine Learning** to pred
 ## 🧠 Tech Stack
 
 * **Python**
-* **Scikit-learn / XGBoost**
+* **Scikit-learn / Random Forest**
 * **Joblib (Model Pipeline)**
 * **Pandas & NumPy**
 * **Streamlit**
